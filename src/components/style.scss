@@ -1,0 +1,15 @@
+.counter {
+    margin: 100px auto;
+    max-width: 100px;
+    text-align: center;
+    &__text {
+        display: block;
+        margin: 0 auto 5px auto;
+    }
+    &__button {
+        margin: 0 auto;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+}

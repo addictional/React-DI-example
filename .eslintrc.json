@@ -1,0 +1,56 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "google",
+        "plugin:jsdoc/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "jsdoc"
+    ],
+    "rules": {
+        "valid-jsdoc" :"off",
+        "require-jsdoc": "off",
+        "jsdoc/require-jsdoc": 1,
+        "jsdoc/require-returns-type" : 0,
+        "linebreak-style": ["error", "windows"],
+        /** problem with not used intefaces start*/
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars-experimental": "error",
+        /** problem with not used intefaces finish*/
+
+
+        "jsdoc/check-tag-names": ["error", {
+            "definedTags": [
+              "chainable",
+              "internal"
+            ]
+        }]
+    },
+    "settings": {
+        "jsdoc": {
+            "mode" : "typescript"
+        }
+    }
+}

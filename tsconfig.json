@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "strict": true,
+        "target": "ES2020",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": ["es7", "dom"],
+        "baseUrl": "./src",
+        "types": ["reflect-metadata","react"],
+        "module" :"CommonJS",
+    }
+}
